@@ -1,4 +1,4 @@
-# Tkinter ChatBot
+# ChatBot
 
 This is a simple chatbot program built with Python's Tkinter library and the ChatterBot library.
 
