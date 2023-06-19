@@ -8,7 +8,7 @@ class Chatbot:
     def get_response(message):
         response = openai.Completion.create(
             engine='text-davinci-003',
-            max_tokens=50,
+            max_tokens=150,
             temperature=0.7,
             prompt=message + "\nBot:",
             # number of responses to return
