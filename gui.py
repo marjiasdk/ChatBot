@@ -25,7 +25,7 @@ root.config(bg="black")
 root.resizable(width=False, height=False)
 
 
-icon_image = PhotoImage(file="Images/chatbot.png")
+icon_image = PhotoImage(file="chatbot.png")
 root.iconphoto(False, icon_image)
 
 # Text() is used to display text in multiple lines
