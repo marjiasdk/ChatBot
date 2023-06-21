@@ -5,25 +5,22 @@ def send_message():
     user_message = user_entry.get().strip()
 
     if user_message:
-        chat_log.insert(END, "User: " + user_message + "\n")
+        chat_log.insert(END, "You: " + user_message + "\n")
         bot_response = Chatbot.get_response(user_message)
-        chat_log.insert(END, "Bot: " + bot_response + "\n")
+        chat_log.insert(END, "Chatbot: " + bot_response + "\n")
 
     user_entry.delete(0, END)  # Clear the user entry widget
 
     # Scroll to the bottom of the chat log
     chat_log.see(END)
 
-
-
 root = Tk()
-root.title("Chatbot")
+root.title("Chatbot powered by OpenAI")
 root.geometry("400x500")
 
 # config can have the following parameters: bg, fg, font, padx, pady, etc.
-root.config(bg="black")
+root.config(bg="light blue", padx=7, pady=7)
 root.resizable(width=False, height=False)
-
 
 icon_image = PhotoImage(file="chatbot.png")
 root.iconphoto(False, icon_image)
@@ -32,15 +29,11 @@ root.iconphoto(False, icon_image)
 chat_log = Text(root, width=50, height=28)
 chat_log.pack()
 
-# Entry() is used to display text in a single line
 user_entry = Entry(root, width=50, borderwidth=3)
-user_entry.pack(side="left", padx=10, pady=10)
+user_entry.pack(side="left", padx=3, pady=(9, 1))
 
-# Bind the Enter key to the send_message function
-user_entry.bind("<Return>", send_message)
-
-# Button() is used to create a button
 submit_button = Button(root, width=20, text="Send", command=send_message)
-submit_button.pack(side="right", padx=10, pady=10)
+submit_button.pack(side="right", padx=3, pady=(9, 1))
+
 
 root.mainloop()
