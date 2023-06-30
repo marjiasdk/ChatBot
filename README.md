@@ -9,10 +9,10 @@ This is a simple chatbot program built with Python's Tkinter library and the Ope
 * OpenAI API: a powerful language model that enables natural language processing and conversation generation.
 * OpenAI Python library: a Python library that provides an interface for interacting with the OpenAI API.
 
+## Demo Video
+
+https://github.com/marjiasdk/Chatbot/assets/113689930/18420b6a-72c6-4c8f-af72-adddcc2ab77d
+
 ## License
 
 This repository is licensed under the MIT License. See the LICENSE file for more information.
-
-## Demo Video
-
-As this project does not have a link, below is a demonstration of how the project works:
