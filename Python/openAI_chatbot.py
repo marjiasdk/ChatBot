@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = 'YOUR_API_KEY_HERE'
+openai.api_key = 'API_KEY_HERE'
 
 class Chatbot:
     # staticmethod is used to create a method that can be called without creating an object of the class

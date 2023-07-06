@@ -22,9 +22,6 @@ root.geometry("400x500")
 root.config(bg="light blue", padx=7, pady=7)
 root.resizable(width=False, height=False)
 
-icon_image = PhotoImage(file="chatbot.png")
-root.iconphoto(False, icon_image)
-
 # Text() is used to display text in multiple lines
 chat_log = Text(root, width=50, height=28)
 chat_log.pack()
